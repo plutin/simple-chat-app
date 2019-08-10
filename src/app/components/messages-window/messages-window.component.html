@@ -1,0 +1,24 @@
+<div class="row message" id="conversation">
+  <label class="messages-label" *ngIf="messages.length < 1">Select contact and start messaging....</label>
+  <div class="col-12 col-md-12" *ngFor="let message of messages">
+    <!--received message component-->
+    <div class="row message-body">
+      <div class="col-sm-12" [ngClass]="'message-main-' + (message.senderId == chatOwner.id.toString() ? 'receiver':'sender')">
+        <div *ngIf="message.senderId == chatOwner.id.toString()" class="receiver-time">
+         {{message.timestamp | date:'HH:mm'}}
+        </div>
+        <div class="{{(message.senderId == chatOwner.id.toString() ? 'receiver':'sender')}}">
+          <div class="message-text">
+           {{message.text}}
+          </div>
+          <fa-icon *ngIf="message.delivered"  [icon]="faCheckDouble" class="faIcon checked " ></fa-icon>
+          <fa-icon *ngIf="!message.delivered" [icon]="faCheck"       class="faIcon unchecked " ></fa-icon>
+        </div>
+        <div *ngIf="message.senderId != chatOwner.id.toString()" class="receiver-time">
+          {{message.timestamp | date:'HH:mm'}}
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>

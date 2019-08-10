@@ -1,0 +1,29 @@
+
+.application{
+  height: 1400px;
+  width: 100%;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 1em;
+  background-color: LightSeaGreen;
+  }
+
+* {
+  -webkit-transition:.2s ease-in-out;
+  -moz-transition:.2s ease-in-out;
+  -o-transition:.2s ease-in-out;
+  transition:.2s ease-in-out;
+}
+.component-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+.add-chat {
+  margin: 50px 0 0 50px;
+}
+
+
+
+

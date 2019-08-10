@@ -1,0 +1,94 @@
+/*main chat section*/
+#conversation {
+  padding: 0;
+  margin: 0;
+  height: 76%;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  overflow: auto;
+}
+.message-body {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  height: auto;
+}
+
+.message-main-receiver {
+  padding: 5px 9px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.receiver {
+  width: auto;
+  min-width: 200px;
+  padding: 4px 10px 7px;
+  border-radius: 0px 6px 6px 6px;
+  background: #ffffff;
+  font-size: 12px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  word-wrap: break-word;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.message-text {
+  margin: 0;
+  padding: 5px;
+  word-wrap: break-word;
+  font-weight: 400;
+  font-size: 14px;
+  padding-bottom: 0;
+}
+.checked{
+  color: lightskyblue;
+  height: 10px;
+  float: right;
+}
+.unchecked{
+  height: 10px;
+  color: black;
+  float: right;
+}
+
+
+.receiver-time {
+  color: gray;
+  font-size: 12px;
+  text-align: right;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.message-main-receiver .receiver-time {
+  text-align: left;
+}
+
+.message-main-sender {
+  padding: 5px 9px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.sender {
+  float: right;
+  width: auto;
+  min-width: 200px;
+  background-color: LightSeaGreen;
+  color: white;
+  border-radius: 6px 6px 0px 6px;
+  padding: 4px 10px 7px;
+  font-size: 12px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  word-wrap: break-word;
+  margin-left: 20px;
+}
+
+.messages-label{
+  top: 50%;
+  left: 25%;
+  position: absolute;
+}
